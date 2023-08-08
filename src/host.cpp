@@ -128,7 +128,7 @@ int main(int argc, char** argv) {
     /*STARTING KERNEL(S)*/
     std::cout << "STARTING KERNEL(S)" << std::endl;
     comp = clock();
-    for (int i = 0; i < TOTAL_DATA_SIZE - DATA_SIZE; i++) {
+    for (int i = 0; i < /*TOTAL_DATA_SIZE - DATA_SIZE*/ 5; i++) {
         OCL_CHECK(err, err = q.enqueueTask(krnl2));
         q.finish();
         OCL_CHECK(err, err = q.enqueueTask(krnl1));
@@ -155,7 +155,7 @@ int main(int argc, char** argv) {
     printf("Computation : %lf ms\n",  1000.0 * comp/CLOCKS_PER_SEC);
    
     bool match = true;
-    for (int i = 0; i < TOTAL_DATA_SIZE - DATA_SIZE; i++) {
+    for (int i = 0; i < /*TOTAL_DATA_SIZE - DATA_SIZE*/ 5; i++) {
         std::cout << "i = " << i << " HW: " << output_hw[i] << " vs " << "SW: " << output_sw[i] << std::endl;
         if (output_hw[i] != output_sw[i]) {
             

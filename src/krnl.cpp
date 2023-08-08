@@ -11,13 +11,12 @@
 data_t DN_Mean(data_t a[DATA_SIZE])
 {
     #pragma HLS INLINE
-    double m = 0.0;
+    data_t m = 0;
     for (int i = 0; i < DATA_SIZE; i++) {
         #pragma HLS PIPELINE
         m += a[i];
     }
-    m /= DATA_SIZE;
-    return m;
+    return m/DATA_SIZE;
 }
 
 extern "C" void krnl(hls::stream<data_t> &input, hls::stream<data_t> &output) {

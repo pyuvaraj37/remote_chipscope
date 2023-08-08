@@ -1,30 +1,43 @@
 {
-    "schema_version":
-    {
+    "schema_version": {
         "major": "1",
-        "minor": "2",
+        "minor": "4",
         "patch": "0"
     },
-    "generation":
-    {
-        "this_file": "\/home\/pyuva001\/hls_catch22\/xrt.run_summary",
+    "generation": {
+        "this_file": "\/home\/pyuvaraj\/remote_chipscope\/xrt.run_summary",
         "source": "vp",
-        "PID": "22871",
-        "timestamp": "1691090644090"
+        "PID": "3119015",
+        "timestamp": "1691447893961",
+        "target": "TT_HW_EMU",
+        "flags": [
+            ""
+        ]
     },
-    "files":
-    [
+    "files": [
         {
             "name": "opencl_trace.csv",
             "type": "VP_TRACE"
         },
         {
-            "name": "device_trace_0.csv",
-            "type": "VP_TRACE"
+            "name": "xilinx_u280_gen3x16_xdma_1_202211_1-0-krnl.link.wdb",
+            "type": "WAVEFORM_DATABASE"
         },
         {
-            "name": "power_profile_xilinx_u250_gen3x16_xdma_shell_4_1-0.csv",
-            "type": "XRT_POWER_PROFILE"
+            "name": "xilinx_u280_gen3x16_xdma_1_202211_1-0-krnl.link.wcfg",
+            "type": "WAVEFORM_CONFIGURATION"
+        },
+        {
+            "name": "profile_kernels.csv",
+            "type": "KERNEL_PROFILE"
+        },
+        {
+            "name": "timeline_kernels.csv",
+            "type": "KERNEL_TRACE"
+        },
+        {
+            "name": "summary.csv",
+            "type": "PROFILE_SUMMARY"
         }
     ]
 }
