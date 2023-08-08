@@ -7,8 +7,8 @@ Here is a link to the offical Xilinx tutorial: https://www.xilinx.com/developer/
 ## Installation 
 
 ```
-git clone https://github.com/pyuvaraj37/hls_catch22.git
-cd hls_catch22
+git clone https://github.com/pyuvaraj37/remote_chipscope.git
+cd remote_chipscope
 ```
 
 ## Software 
